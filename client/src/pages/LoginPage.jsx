@@ -25,9 +25,9 @@ const LoginPage = () => {
                 }));
 
                 if (user.role === "admin") {
-                    navigate("/admin/dashboard");
+                    navigate("/admin/manage-reservations");
                 } else {
-                    navigate("/user/dashboard");
+                    navigate("/user/reservations");
                 }
             } 
         } catch (error) {

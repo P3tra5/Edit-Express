@@ -24,7 +24,7 @@ const SignupPage = () => {
                     role: user.role,
                 }));
             
-                navigate("/user/dashboard");
+                navigate("/user/reservations");
             }
 
             console.log("Korisnik uspješno registriran!");
