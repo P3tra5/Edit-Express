@@ -7,7 +7,7 @@ const checkToken = (req, res, next) => {
    
     try {
         const decodedToken = jwt.verify(token, process.env.TAJNI_KLJUC);
-        req.userId = decodedToken;
+        req.user = decodedToken;
     } catch (err) {
         return res.status(401).send('Neispravni Token');
     }

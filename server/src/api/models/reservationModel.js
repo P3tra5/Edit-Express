@@ -13,18 +13,26 @@ const reservationSchema = new mongoose.Schema({
     vehicle: { type: mongoose.Schema.Types.ObjectId, ref: 'Vehicle' }
 });
 
-reservationSchema.post('save', function(doc) {
-    const vehicle = doc.vehicle;
-    const status = doc.status;
+reservationSchema.post('save', async function (doc) {
+    const Vehicle = require('./vehicleModel'); // Import Vehicle model
 
-    if (status === "pending" || status === "upcoming" || status === "active") {
-        vehicle.status = "unavailable";
-        vehicle.save();
-    } else if (status === "cancelled" || status === "rejected") {
-        vehicle.status = "available";
-        vehicle.save();
+    try {
+        const vehicle = await Vehicle.findById(doc.vehicle);
+        const status = doc.status;
+
+        if (vehicle) {
+            if (["pending", "upcoming", "active"].includes(status)) {
+                vehicle.status = "unavailable";
+            } else if (["cancelled", "rejected"].includes(status)) {
+                vehicle.status = "available";
+            }
+            await vehicle.save();
+        }
+    } catch (error) {
+        console.error("Error updating vehicle status:", error.message);
     }
 });
+
 
 const Reservation = mongoose.model('Reservation', reservationSchema);
 

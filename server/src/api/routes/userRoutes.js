@@ -7,8 +7,8 @@ const {
 } = require("../controllers/userController");
 const router = express.Router();
 
-router.get("/getAllUsers", getAllUsers); //
+router.get("/", getAllUsers); //
 
-router.get("/:id", checkCookie('accessToken'), checkToken, getUserById);
+router.get("/:id", checkCookie('accessToken'), checkToken, getUserById); //
 
 module.exports = router;

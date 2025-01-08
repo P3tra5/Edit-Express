@@ -6,6 +6,8 @@ const connectDB = require("./config/db");
 
 const authRoutes = require("./api/routes/authRoutes");	
 const userRoutes = require("./api/routes/userRoutes");
+const reservationRoutes = require("./api/routes/reservationRoutes");
+const vehicleRoutes = require("./api/routes/vehicleRoutes");
 
 const checkToken = require("./api/middleware/checkToken");
 const checkCookie = require("./api/middleware/checkCookie");
@@ -21,7 +23,9 @@ app.use(cors(corsOptions))
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth", authRoutes);
-app.use("/api/user", userRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/reservations", reservationRoutes);
+app.use("/api/vehicles", vehicleRoutes);
 
 connectDB();
 
@@ -33,7 +37,7 @@ app.get('/samoadmin', checkToken, checkRole('admin'), (req, res) => {
     res.send('Ovo je podatak samo za admina');
 }); //test   
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server sluša zahtjeve na portu ${PORT}`);
 });
