@@ -10,9 +10,9 @@ const reservationRoutes = require("./api/routes/reservationRoutes");
 const vehicleRoutes = require("./api/routes/vehicleRoutes");
 const reportRoutes = require("./api/routes/reportRoutes");
 
-const checkToken = require("./api/middleware/checkToken");
+/*const checkToken = require("./api/middleware/checkToken");
 const checkCookie = require("./api/middleware/checkCookie");
-const checkRole = require("./api/middleware/checkRole");
+const checkRole = require("./api/middleware/checkRole"); */
 const scheduleReservationComplete = require("./api/helpers/completeReservations");
 
 const corsOptions = {
@@ -33,13 +33,13 @@ app.use("/api/reports", reportRoutes);
 connectDB();
 scheduleReservationComplete();
 
-app.get('/ruta2', checkCookie('accessToken'), checkToken, (req, res) => {
+/* app.get('/ruta2', checkCookie('accessToken'), checkToken, (req, res) => {
     res.status(200).json({ message: 'Dozvoljen pristup podatku, ruta2' });
 });  //test
 
 app.get('/samoadmin', checkToken, checkRole('admin'), (req, res) => {
     res.send('Ovo je podatak samo za admina');
-}); //test   
+}); //test    */
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

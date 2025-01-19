@@ -1,13 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-/* import { createApiCall } from "./api";
 
-const createApiThunk = (type, method, url) => {
-    return createAsyncThunk(type, async (data = null) => {
-        return await createApiCall(method, url, data);
-    });
-};
- */
 const handlePending = (state) => {
     state.status = "loading";
 };
@@ -21,12 +14,6 @@ const handleRejected = (state, action) => {
     state.status = "failed";
     state.error = action.payload || action.error.message;
 };
-/* 
-export const fetchReservations = createApiThunk(
-    "reservations/fetchReservations",
-    "GET",
-    `/reservations`
-); */
 
 export const fetchReservations = createAsyncThunk("reservations/fetchReservations",
     async () => {
@@ -49,12 +36,6 @@ export const fetchUserReservations = createAsyncThunk(
         }
     }
 );
-
-/* export const createReservation = createApiThunk(
-    "reservations/createReservation",
-    "POST",
-    `reservations`
-); */
 
 export const createReservation = createAsyncThunk("reservations/createReservation",
     async (reservationData, { rejectWithValue }) => {
@@ -88,17 +69,6 @@ export const updateReservationStatus = createAsyncThunk("reservations/updateRese
         }
     }
 );
-
-/* export const updateReservation = createAsyncThunk("reservations/updateReservation",
-    async ({ id, updateData }, { rejectWithValue }) => {
-        try {
-            const response = await axios.put(`http://localhost:3000/api/reservations/${id}`, updateData, { withCredentials: true });
-            return response.data;
-        } catch (error) {
-            return rejectWithValue(error.response.data || error.message);
-        }
-    }
-); */
 
 const reservationsSlice = createSlice({
     name: "reservations",

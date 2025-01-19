@@ -14,7 +14,6 @@ const VehicleDropdown = ({ onVehicleSelect, selectedVehicle  }) => {
 
     return (
         <div>
-            {/* <label>Select Vehicle:</label> */}
             <select value={selectedVehicle} onChange={(e) => onVehicleSelect(e.target.value)}>
                 <option value="">-- Select a vehicle --</option>
                 {vehicles.map((vehicle) => (

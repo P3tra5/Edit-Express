@@ -1,12 +1,7 @@
 import React from "react";
 import Reservation from "./Reservation";
 
-const ReservationList = ({ reservations, onUpdateStatus, onUpdateVehicle }) => {
-    /* const sortedReservations = [...reservations].sort(
-        (firstReservation, secondReservation) => 
-            new Date(firstReservation.startDate) - new Date(secondReservation.startDate)
-    ); */
-    
+const ReservationList = ({ reservations, onUpdateStatus, onUpdateVehicle }) => {  
     const pendingReservations = reservations
         .filter((reservation) => reservation.status === "pending")
         .sort(
