@@ -40,6 +40,30 @@ const postVehicle = async (req, res) => {
     }
 };
 
+const updateVehicleIDateById = async (req, res) => {
+    try {
+        const vehicle = await Vehicle.findByIdAndUpdate(req.params.id, { inspectionDate: req.body.inspectionDate }, { new: true })
+        if (!vehicle) {
+            return res.status(404).json({ message: "vehicle not found" });
+        }
+        res.status(200).json(vehicle);
+    } catch (error) {
+        res.status(500).send(error.message);
+    }
+} 
+
+const updateVehicleStatusById = async (req, res) => {
+    try {
+        const vehicle = await Vehicle.findByIdAndUpdate(req.params.id, { status: req.body.status }, { new: true })
+        if (!vehicle) {
+            return res.status(404).json({ message: "vehicle not found" });
+        }
+        res.status(200).json(vehicle);
+    } catch (error) {
+        res.status(500).send(error.message);
+    }
+};
+
 const deleteVehicleById = async (req, res) => {
     try {
         const vehicle = await Vehicle.findByIdAndDelete(req.params.id);
@@ -52,4 +76,11 @@ const deleteVehicleById = async (req, res) => {
     }
 };
 
-module.exports = { getAllVehicles, getVehicleById, postVehicle, deleteVehicleById, };
+module.exports = {
+    getAllVehicles,
+    getVehicleById,
+    postVehicle,
+    updateVehicleIDateById,
+    updateVehicleStatusById,
+    deleteVehicleById
+};

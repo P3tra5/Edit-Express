@@ -14,7 +14,7 @@ const reservationSchema = new mongoose.Schema({
 });
 
 reservationSchema.post('save', async function (doc) {
-    const Vehicle = require('./vehicleModel'); // Import Vehicle model
+    const Vehicle = require('./vehicleModel');
 
     try {
         const vehicle = await Vehicle.findById(doc.vehicle);
@@ -32,7 +32,6 @@ reservationSchema.post('save', async function (doc) {
         console.error("Error updating vehicle status:", error.message);
     }
 });
-
 
 const Reservation = mongoose.model('Reservation', reservationSchema);
 

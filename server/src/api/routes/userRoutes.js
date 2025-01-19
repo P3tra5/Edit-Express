@@ -6,7 +6,7 @@ const {
     getUserById 
 } = require("../controllers/userController");
 const router = express.Router();
-
+//dodat middleware!!!!!!!!!!!!!!!!!!!!!!!!
 router.get("/", getAllUsers); //
 
 router.get("/:id", checkCookie('accessToken'), checkToken, getUserById); //
