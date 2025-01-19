@@ -39,7 +39,7 @@ const ReservationForm = () => {
             onSubmit={handleSubmit}
             className="bg-white p-6 rounded shadow-md border border-gray-200"
         >
-            <h2 className="text-xl font-semibold mb-4">Create a Reservation</h2>
+            <h2 className="text-2xl text-accent font-semibold mb-4">Create a Reservation</h2>
             <div className="mb-4">
                 <label className="block text-sm font-medium mb-1">Start Date:</label>
                 <input

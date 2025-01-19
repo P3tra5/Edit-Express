@@ -4,30 +4,25 @@ import { NavLink } from "react-router-dom";
 import { logout } from "../store/authSlice";
 import { resetState } from "../store/actions";
 
-const Navbar = () => {
+const Navbar = ({ onNewReservationClick }) => {
     const dispatch = useDispatch();
     const { isAuthenticated, role } = useSelector((state) => state.auth);
 
     const handleLogout = () => {
         dispatch(logout());
-        dispatch(resetState()); 
+        dispatch(resetState());
     };
 
     return (
         <nav className="bg-white text-text shadow-md dark:bg-background-dark dark:text-text-dark">
             <div className="container mx-auto px-4 py-3 flex justify-between items-center">
                 {/* Logo */}
-                <div
-                    className="text-3xl font-bold"
-                    style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
+                <div className="text-3xl font-bold" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                     <NavLink
                         to="/"
                         className={({ isActive }) =>
-                            isActive
-                                ? "text-primary dark:hover:text-secondary-dark underline"
-                                : "text-primary dark:hover:text-secondary-dark"
-                        } //
+                            isActive ? "text-primary dark:hover:text-secondary-dark underline" : "text-primary dark:hover:text-secondary-dark"
+                        }
                     >
                         Fleet Management
                     </NavLink>
@@ -40,9 +35,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/login"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline"
-                                        : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
+                                    isActive ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline" : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
                                 }
                             >
                                 Login
@@ -50,9 +43,7 @@ const Navbar = () => {
                             <NavLink
                                 to="/signup"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline"
-                                        : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
+                                    isActive ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline" : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
                                 }
                             >
                                 Signup
@@ -61,7 +52,7 @@ const Navbar = () => {
                     ) : role === "user" ? (
                         <>
                             <button
-                                onClick={handleLogout}
+                                onClick={() => onNewReservationClick()}
                                 className="bg-accent text-white px-4 py-2 rounded-md transition hover:bg-accent-dark dark:bg-accent-dark dark:hover:bg-accent"
                             >
                                 New Reservation
@@ -78,40 +69,30 @@ const Navbar = () => {
                             <NavLink
                                 to="/admin/manage-reservations"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline"
-                                        : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
+                                    isActive ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline" : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
                                 }
-                                style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 Reservations
                             </NavLink>
                             <NavLink
                                 to="/admin/vehicle-tracking"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline"
-                                        : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
+                                    isActive ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline" : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
                                 }
-                                style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 Vehicles
                             </NavLink>
                             <NavLink
                                 to="/admin/handle-issues"
                                 className={({ isActive }) =>
-                                    isActive
-                                        ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline"
-                                        : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
+                                    isActive ? "hover:underline hover:text-secondary dark:hover:text-secondary-dark underline" : "hover:underline hover:text-secondary dark:hover:text-secondary-dark"
                                 }
-                                style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 Reports
                             </NavLink>
                             <button
                                 onClick={handleLogout}
                                 className="bg-white text-primary px-4 py-2 rounded-md transition hover:bg-secondary dark:bg-accent-dark dark:hover:bg-accent border border-primary"
-                                style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 ↪ Logout
                             </button>

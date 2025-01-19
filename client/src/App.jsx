@@ -1,5 +1,5 @@
-import './App.css'
-import React from "react";
+import './App.css';
+import React, { useRef } from "react";
 import { Provider } from 'react-redux';
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from './store/store';
@@ -14,11 +14,20 @@ import VehicleTrackingPage from './pages/VehicleTracking/VehicleTrackingPage';
 import HandleIssuesPage from './pages/HandleIssues/HandleIssuesPage';
 
 const App = () => {
+    const reservationFormRef = useRef(null);
+
+    const scrollToForm = () => {
+        reservationFormRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
+
     return (
-        <Provider store = {store}>
+        <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <BrowserRouter>
-                    <Navbar />
+                    <Navbar onNewReservationClick={scrollToForm} />
                     <Routes>
                         <Route path="/" element={<Navigate to="/login" replace />} />
                         <Route path="/login" element={<Login />} />
@@ -27,7 +36,7 @@ const App = () => {
                             path="/user/reservations"
                             element={
                                 <ProtectedRoute role="user">
-                                    <UserReservationsPage />
+                                    <UserReservationsPage reservationFormRef={reservationFormRef} />
                                 </ProtectedRoute>
                             }
                         />
