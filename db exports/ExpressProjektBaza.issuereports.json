@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "6789aea45d5b58f339f392bb"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "issueType": "damage",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ",
+  "resolved": true,
+  "reportedAt": {
+    "$date": "2025-01-15T01:13:08.884Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6789aefc5d5b58f339f392c0"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a71655a86b4b967133ab"
+  },
+  "issueType": "damage",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ",
+  "resolved": true,
+  "reportedAt": {
+    "$date": "2025-01-17T01:14:36.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678a6ffc9801839e17bd1c0e"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "issueType": "damage",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ssf",
+  "resolved": false,
+  "reportedAt": {
+    "$date": "2025-01-07T14:58:04.667Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678a73a89801839e17bd1c3c"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "issueType": "damage",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ",
+  "resolved": true,
+  "reportedAt": {
+    "$date": "2025-01-17T15:13:44.980Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678be177337bf69381dcd622"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "issueType": "technical issue",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ",
+  "resolved": false,
+  "reportedAt": {
+    "$date": "2025-01-18T17:14:31.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678c0a68337bf69381dcd694"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "reservation": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "issueType": "technical issue",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula enim odio, a scelerisque augue hendrerit non. ",
+  "resolved": true,
+  "reportedAt": {
+    "$date": "2025-01-18T20:09:12.909Z"
+  },
+  "__v": 0
+}]

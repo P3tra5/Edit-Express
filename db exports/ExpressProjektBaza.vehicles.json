@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "licensePlate": "ST-234-AS",
+  "type": "car",
+  "model": "marka 5",
+  "inspectionDate": {
+    "$date": "2025-01-24T00:00:00.000Z"
+  },
+  "status": "in maintenance",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677d050a7cfb1d04d72cd27c"
+  },
+  "licensePlate": "ST-265-AS",
+  "type": "car",
+  "model": "marka 6",
+  "inspectionDate": {
+    "$date": "2025-01-31T00:00:00.000Z"
+  },
+  "status": "available",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67898e134e96977de0f78617"
+  },
+  "licensePlate": "DU-111-AS",
+  "type": "van",
+  "model": "skoda neka",
+  "status": "unavailable",
+  "__v": 0,
+  "inspectionDate": {
+    "$date": "2025-01-25T00:00:00.000Z"
+  }
+}]

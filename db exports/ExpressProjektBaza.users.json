@@ -1,0 +1,173 @@
+[{
+  "_id": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "username": "Ana Anić",
+  "email": "mail1@gmail.com",
+  "password": "$2b$10$sRtrorPlIoKAuxHAzAIwRecl0yu09I2w8e6g3.nnd38NqbKf48dtu",
+  "role": "user",
+  "__v": 42,
+  "reservations": [
+    {
+      "$oid": "677e5cc469785172263d9460"
+    },
+    {
+      "$oid": "677ec83c452237ff611248bd"
+    },
+    {
+      "$oid": "677ec9674315db13e08fe0b4"
+    },
+    {
+      "$oid": "677ec9f64315db13e08fe0ba"
+    },
+    {
+      "$oid": "677ee6454315db13e08fe0c6"
+    },
+    {
+      "$oid": "678552344315db13e08fe0df"
+    },
+    {
+      "$oid": "678552394315db13e08fe0e5"
+    },
+    {
+      "$oid": "6785537a4315db13e08fe0fe"
+    },
+    {
+      "$oid": "678553dd4315db13e08fe110"
+    },
+    {
+      "$oid": "678571974315db13e08fe11f"
+    },
+    {
+      "$oid": "678572784315db13e08fe12e"
+    },
+    {
+      "$oid": "678573d24315db13e08fe13d"
+    },
+    {
+      "$oid": "678579264315db13e08fe159"
+    },
+    {
+      "$oid": "6785795c4315db13e08fe168"
+    },
+    {
+      "$oid": "678579fa4315db13e08fe178"
+    },
+    {
+      "$oid": "67857a434315db13e08fe187"
+    },
+    {
+      "$oid": "678582c14315db13e08fe196"
+    },
+    {
+      "$oid": "67859a165c280385444a5b04"
+    },
+    {
+      "$oid": "67859a7f5c280385444a5b15"
+    },
+    {
+      "$oid": "67859bfd5c280385444a5b26"
+    },
+    {
+      "$oid": "67859ca55c280385444a5b37"
+    },
+    {
+      "$oid": "67859d405c280385444a5b51"
+    },
+    {
+      "$oid": "67859d685c280385444a5b62"
+    },
+    {
+      "$oid": "67859dad5c280385444a5b73"
+    },
+    {
+      "$oid": "67859e665c280385444a5b84"
+    },
+    {
+      "$oid": "67859ea75c280385444a5b91"
+    },
+    {
+      "$oid": "6785a23224eb21ebab2b907d"
+    },
+    {
+      "$oid": "6785a2a324eb21ebab2b908e"
+    },
+    {
+      "$oid": "6785a59255a86b4b96713392"
+    },
+    {
+      "$oid": "6785a6eb55a86b4b967133a3"
+    },
+    {
+      "$oid": "6785a71655a86b4b967133ab"
+    },
+    {
+      "$oid": "6785a74255a86b4b967133bc"
+    },
+    {
+      "$oid": "67864fab55a86b4b967133cd"
+    },
+    {
+      "$oid": "6786528255a86b4b967133e0"
+    },
+    {
+      "$oid": "678652f937465e025e377060"
+    },
+    {
+      "$oid": "678823915a16a9fbc41e371c"
+    },
+    {
+      "$oid": "678974e58044336aad0c4f68"
+    },
+    {
+      "$oid": "678b95c3b0f14013668dc3c5"
+    },
+    {
+      "$oid": "678b9bacb0f14013668dc3cd"
+    },
+    {
+      "$oid": "678b9bd4b0f14013668dc3d5"
+    },
+    {
+      "$oid": "678c0a4a337bf69381dcd689"
+    },
+    {
+      "$oid": "678d88a82d954ad69b00c396"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "677a92ed4a75f47efd3eef96"
+  },
+  "username": "adminName",
+  "email": "mailA1@gmail.com",
+  "password": "$2b$10$nch44sXxxCtsOEUfKz1nc.thrQ5LGmjuhijG/bSu/LA6iGxE16jT2",
+  "role": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677a9567c79b0b35e3d858f8"
+  },
+  "username": "username2",
+  "email": "mail2@gmail.com",
+  "password": "$2b$10$xjXgMeOdeQi2DQKV3OJ3rONJdBUZrJALm..ryFEOmOWKuyOYV14Wa",
+  "role": "user",
+  "__v": 1,
+  "reservations": [
+    {
+      "$oid": "67870d9894123535d288dd6d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "677a97422805766dc68048d3"
+  },
+  "username": "username4",
+  "email": "mail4@gmail.com",
+  "password": "$2b$10$viQq6xXycz.ogQwdTy3oLuUfoFfUbMkEXbbnWtwvVq/dYqu2t9lYa",
+  "role": "user",
+  "__v": 0
+}]

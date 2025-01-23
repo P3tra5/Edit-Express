@@ -1,0 +1,280 @@
+[{
+  "_id": {
+    "$oid": "6785a59255a86b4b96713392"
+  },
+  "employee": {
+    "$oid": "677a9567c79b0b35e3d858f8"
+  },
+  "startDate": {
+    "$date": "2025-01-17T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-18T00:00:00.000Z"
+  },
+  "purpose": "Predavanje u Zagrebu",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6785a6eb55a86b4b967133a3"
+  },
+  "employee": {
+    "$oid": "677a9567c79b0b35e3d858f8"
+  },
+  "startDate": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-02T00:00:00.000Z"
+  },
+  "purpose": "Konferencija u Rijeci",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "67898e134e96977de0f78617"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6785a71655a86b4b967133ab"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-22T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-30T00:00:00.000Z"
+  },
+  "purpose": "Konferencija u Dubrovniku",
+  "status": "cancelled",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6785a74255a86b4b967133bc"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-02T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-11T00:00:00.000Z"
+  },
+  "purpose": "Konferencija u Zagrebu",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67864fab55a86b4b967133cd"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-16T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-01T00:00:00.000Z"
+  },
+  "purpose": "Predavanje u Zadru",
+  "status": "active",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6786528255a86b4b967133e0"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-16T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-22T00:00:00.000Z"
+  },
+  "purpose": "Sastanak u Zagrebu",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "67898e134e96977de0f78617"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678652f937465e025e377060"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-02-28T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-03-01T00:00:00.000Z"
+  },
+  "purpose": "Prebacivanje opreme",
+  "status": "pending",
+  "vehicle": {
+    "$oid": "67898e134e96977de0f78617"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67870d9894123535d288dd6d"
+  },
+  "employee": {
+    "$oid": "677a9567c79b0b35e3d858f8"
+  },
+  "startDate": {
+    "$date": "2025-01-17T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-18T00:00:00.000Z"
+  },
+  "purpose": "Prijevoz novih uredskih stolica",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678823915a16a9fbc41e371c"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-03-19T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-03-21T00:00:00.000Z"
+  },
+  "purpose": "Sastanak u Rijeci",
+  "status": "pending",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678974e58044336aad0c4f68"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-01-17T00:00:00.000Z"
+  },
+  "purpose": "Prijevoz sefa",
+  "status": "completed",
+  "vehicle": {
+    "$oid": "677d050a7cfb1d04d72cd27c"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b95c3b0f14013668dc3c5"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-02-14T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-16T00:00:00.000Z"
+  },
+  "purpose": "Predstavljanje u Ljubljani",
+  "status": "upcoming",
+  "vehicle": {
+    "$oid": "67898e134e96977de0f78617"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678b9bacb0f14013668dc3cd"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-30T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-02-02T00:00:00.000Z"
+  },
+  "purpose": "Konferencija u Rijeci",
+  "status": "upcoming",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678c0a4a337bf69381dcd689"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-02-26T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-27T00:00:00.000Z"
+  },
+  "purpose": "Sastanak",
+  "status": "upcoming",
+  "vehicle": {
+    "$oid": "677d050a7cfb1d04d72cd27c"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "678d88a82d954ad69b00c396"
+  },
+  "employee": {
+    "$oid": "677941aa58a8c6386fc3fd7e"
+  },
+  "startDate": {
+    "$date": "2025-01-25T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-02-01T00:00:00.000Z"
+  },
+  "purpose": "Predavanje",
+  "status": "rejected",
+  "vehicle": {
+    "$oid": "677d04ea7cfb1d04d72cd279"
+  },
+  "__v": 0
+}]
